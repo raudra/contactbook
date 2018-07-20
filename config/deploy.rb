@@ -9,7 +9,7 @@ set :repo_url, "git@github.com:raudra/contactbook.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/my_app_name"
-
+set :bundle_binstubs, -> { shared_path.join('bin') }
 set :branch, :master
 set :deploy_to, '/home/deploy/contactbook'
 set :pty, true
